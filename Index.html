@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Kreasi Bambu</title>
+  <script type="text/javascript">
+    //main function nama = Func()
+    function Func() {
+      alert("Website In Progress");
+      alert("Wait Please");
+    }
+
+    // bukan function karna gak ada awalannya
+
+    var input = document.getElementById("myInput");
+    input.getEventListener("keyup", function(event) {
+
+      // ketcode 13 = enter
+
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("myBtn").click();
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="BG">
+    <img class="BG">
+    <div class="Navbar">
+      <ul>
+        <li><a href="#" onclick="Func()" class="Menu">Menu</a></li>
+        <li><a href="#" onclick="Func()">Home</a></li>
+        <li><a href="#" onclick="Func()">Setting</a></li>
+        <li><a href="#" onclick="Func()" class="Login">Log In</a></li>
+      </ul>
+    </div>
+    <div class="formSearch">
+      <div class="myInput">
+        <form role="search">
+          <input class="myInp" type="search" placeholder="Cari Barang/Produk/Kreasi Dari Bambu" id="myInput" value="" autocomplete="off"> 
+          <button href="#" onclick="javascript:alert('Website In Progress')" id="myBtn" class="myButton"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="sc1">
+      <div>
+        <img src="Foto1.jpg" width="400px" height="400px" class="foto">
+        <div class="text">
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna....</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
